@@ -1,0 +1,4 @@
+wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
+wget https://rpms.remirepo.net/enterprise/remi-release-9.rpm
+wget https://rpm.ocsinventory-ng.org/ocsinventory-release-latest.el9.ocs.noarch.rpm
+dnf install ocsinventory-release-latest.el9.ocs.noarch.rpm epel-release-latest-9.noarch.rpm remi-release-9.rpm
