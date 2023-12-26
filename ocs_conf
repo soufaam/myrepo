@@ -1,0 +1,12 @@
+#enable and start mariadb service
+systemctl enable mariadb
+systemctl start mariadb
+#secure the database
+mysql_secure_install
+#enable and launch apache:
+systemctl enable httpd
+systemctl start httpd
+# firewall configuration
+firewall-cmd --zone=public --add-service=http --permanent
+firewall-cmd --zone=public --add-service=https --permanent
+firewall-cmd --reload
