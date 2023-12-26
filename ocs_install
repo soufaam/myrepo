@@ -1,0 +1,4 @@
+dnf install yum-utils
+yum-config-manager --enable remi
+yum-config-manager --enable crb
+dnf install ocsinventory
